@@ -1,0 +1,11 @@
+{
+  "name": "lan-drop-root",
+  "version": "1.0.0",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "start": "concurrently \"npm run start --prefix server\" \"npm run dev --prefix client\""
+  },
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
